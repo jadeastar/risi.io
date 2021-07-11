@@ -1,0 +1,25 @@
+---
+layout: default
+title: news
+---
+
+<div class="container">
+  
+<br><br><br>
+  {% for post in site.posts %}
+  <div class="center card">
+             
+
+              <div class="card-body">
+                <h1 class="card-title">{{ post.title }}</h5>
+                
+		<p class="card-text"><small class="text-muted">Last updated: {{ post.date }}</small></p>
+                <a href="{{ post.url }}" class="btn btn-primary">Read</a>
+              </div>
+</div>
+
+  <br><br><br>
+  
+  {% endfor %}
+
+</div>
